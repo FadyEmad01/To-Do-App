@@ -1,0 +1,269 @@
+/* body{
+    background-color:black;
+    color: white;
+} */
+.darkc{
+    background-color: #333;
+    padding: 30px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.darkb{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+
+}
+
+.none{
+    display: none
+}
+#validationmessage i {
+    /* background-color: ; */
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+
+}
+.block{
+    display: none;
+}
+.form-group{
+    margin: 10px 0px;
+}
+.inputd{
+    background-color: #333;
+    color: white;
+    border: none;
+}
+
+.inputd::placeholder{
+    color: white;
+    font-weight: bold;
+}
+
+.fady{
+    margin: auto;
+}
+.inputd:focus{
+    background-color: #333;
+    color: white;
+}
+.markcolord{
+    color: #0dcaf0;
+}
+
+/*light*/
+.lightc{
+    background-color: #bbcfda;
+    padding: 30px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+.lightb{
+    background-color: #e4e5e6 ;
+    color: black;
+    border-radius: 20px;
+
+}
+.inputl{
+    background-color: white;
+    color: black;
+   
+}
+.inputl::placeholder{
+    color: black;
+    font-weight: bold;
+}
+.inputl:focus{
+    background-color: white;
+    color: black;
+}
+.markcolorl{
+    color: #0baece;
+}
+/**/
+
+
+
+:root{
+    --dark: #111;
+  }
+  
+  .theme-container {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+  }
+  
+  .theme-container:hover {
+    opacity: 0.8;
+  }
+  
+  .shadow-dark {
+    background: linear-gradient(145deg, #23282c, #1e2125);
+    box-shadow: 17px 17px 23px #1a1d20,
+      -17px -17px 23px #282d32, inset 5px 5px 4px #1e2226,
+      inset -5px -5px 4px #24282c;
+  }
+  
+  .shadow-light {
+    box-shadow: 7px 7px 15px -10px #bbcfda, -4px -4px 13px #ffffff,
+      inset 7px 7px 3px rgba(209, 217, 230, 0.35),
+      inset -11px -11px 3px rgba(255, 255, 255, 0.3)
+  }
+  
+  @keyframes change {
+    0% {
+      transform: scale(1);
+    }
+  
+    100% {
+      transform: scale(1.4);
+    }
+  }
+  
+  .change {
+    animation-name: change;
+    animation-duration: 1s;
+    animation-direction: alternate;
+  }
+
+
+
+  /* alert */
+
+/* .toasts{
+    width: 70%;
+    position: absolute;
+    top: 30%;
+    left: 16%;
+}
+.costnegative{
+    display: none;
+} */
+  
+
+
+
+
+* {
+    box-sizing: border-box;
+    /* direction: rtl; */
+    padding: 0;
+    margin: 0;
+
+  }
+
+  .alert_modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999999999999999999;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Calibri;
+    font-weight: 900;
+  }
+
+  .alert_container {
+    width: 90%;
+    background-color: white;
+    border-radius: 10px;
+    animation: 0.5s 1 alert_container_animation;
+    -webkit-animation: 35s 1 alert_container_animation;
+  }
+
+  @media (min-width: 600px) {
+    .alert_container {
+      width: 350px;
+    }
+  }
+
+  @keyframes alert_container_animation {
+    0% {
+      transform: scale(0.5);
+    }
+
+    1% {
+      transform: scale(1.1);
+    }
+
+    2% {
+      transform: scale(1);
+    }
+  }
+
+  @-webkit-keyframes alert_container_animation {
+    0% {
+      transform: scale(0.5);
+    }
+
+    1% {
+      transform: scale(1.1);
+    }
+
+    2% {
+      transform: scale(1);
+    }
+  }
+
+  .alert_heading {
+    padding: 20px;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+  }
+
+  .alert_details {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .alert_details h2 {
+    font-size: 20px;
+  }
+
+  .alert_details p {
+    font-size: 14px;
+    color: #525252;
+    line-height: 1.5em;
+    margin-top: 5px;
+  }
+
+  .alert_footer {
+    background-color: #E3E3E3;
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .alert_footer span {
+    color: #979797;
+    cursor: pointer;
+  }
+
+  .alert_footer span:hover {
+    color: #353535;
+  }
+
+  
+
+
+  

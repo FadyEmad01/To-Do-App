@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/all.min.css" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+
+  
+  <div class="theme-container shadow-dark">
+    <img id="theme-icon"    src="https://www.uplooder.net/img/image/2/addf703a24a12d030968858e0879b11e/moon.svg" alt="ERR">
+  </div>
+
+  <h1 class="text-center markcolord markbt3na my-3">To Do App</h1>
+  <div class="container col-md-10">
+    <div class="card darkc">
+      <div class="card-body darkb newbody">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="form-group">
+              <input type="text" id="title" class="form-control inputd inpreplace" placeholder="title" />
+            </div>
+          </div>
+          <div class="row" id="cost">
+            <div class="col-xl-2">
+              <div class="form-group">
+                <input type="text"  id="price" class="form-control inputd  inpreplace" placeholder="price" />
+              </div>
+            </div>
+            <div class="col-xl-2">
+              <div class="form-group">
+                <input type="text" id="taxes" class="form-control inputd inpreplace" placeholder="taxes" />
+              </div>
+            </div>
+            <div class="col-xl-2">
+              <div class="form-group">
+                <input type="text" id="tcost" class="form-control inputd inpreplace" placeholder="T.cost" />
+              </div>
+            </div>
+            <div class="col-xl-3">
+              <div class="form-group">
+                <input type="text" id="discound" class="form-control inputd inpreplace" placeholder="discound" />
+              </div>
+            </div>
+            <div class="col-xl-3">
+            <div class="form-group">
+              <input type="total" id="title" class="form-control inputd inpreplace" placeholder="total" />
+            </div></div>
+
+          </div>
+          <div class="col-xl-12">
+            <div class="form-group">
+              <input type="text" id="count" class="form-control inputd inpreplace" placeholder="count number" />
+            </div>
+          </div>
+          <div class="col-xl-12">
+            <div class="form-group">
+              <input type="text" id="department" class="form-control inputd inpreplace" placeholder="Image URL" />
+            </div>
+          </div>
+          <div class="d-grid col-2 fady">
+            <button id="btncreate" class="btn btn-info">create product</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h1 class="text-danger text-center mt-3">List All Tasks</h1>
+  <div class="container col-md-12 mt-5">
+    <div class="card darkc">
+      <div class="card-body darkb newbody">
+        <div class="d-grid">
+          <button id="deleteallbtn" class="btn btn-danger none my-3"> Delete All <span></span> </button>
+        </div>
+        <table class="table table-dark newtable">
+          <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Taxes</th>
+            <th>T.cost</th>
+            <th>Discound</th>
+            <th>Total</th>
+            <th>count</th>
+            <th>Image</th>
+            <th colspan="2">Action</th>
+          </tr>
+          <tbody id="tablebody"></tbody>
+        </table>
+
+      </div>
+    </div>
+  </div>
+
+<!-- alert -->
+
+<!-- <div class="toasts costnegative">
+  <div role="alert" class="fade alert alert-danger alert-dismissible show">
+    <button type="button" class="btn-close" aria-label="Close alert"></button>
+    <div class="d-flex">
+      <img alt="noti-icon" src="https://brand.workingsolutions.com/components/images/danger.svg" width="28" class="me-4">
+      <div>
+        <div class="alert-heading h4">This is an error alert</div>
+        <p>Visit our registration page, then try again</p>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- alert --><!--/////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!-- 
+  how its work ?
+  call this function
+
+  New.alert({
+   status: 'success == '' OR danger == error OR info == confirm defult is success ',
+   title: 'alert title',
+   content: 'alert content',
+   confirmbtn : bool defult true only for info 
+  });
+If you set false in confirmbtn,
+ you don't need to do anything, but 
+ if you set true, you must use this 
+ function : 
+ function accept(){
+  // do something
+ }
+
+
+ -->
+
+
+
+
+  <script src="./js/main.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
